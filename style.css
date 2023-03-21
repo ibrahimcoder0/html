@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-content{
+    max-width: 1200px;
+    margin: auto;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+
+
+
+/*header area*/
+.header-area {
+    background: #fff;
+    border-bottom: 3px solid #f00;
+    padding: 5px 0;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+    z-index: 999;
+}
+.logo {
+    width: 30%;
+    float: left;
+    vertical-align: middle;
+}
+.logo a img {
+    width: 150px;
+}
+.primary-menu {
+    width: 50%;
+    float: left;
+}
+.menu {
+    padding: 14px 0;
+}
+.menu ul li {
+    display: inline-block;
+    padding: 10px;
+    vertical-align: middle;
+}
+.menu ul li a {
+    display: block;
+    font-size: 18px;
+    color: #000;
+    transition: .3s;
+    padding: 0px 10px;
+    line-height: 35px;
+}
+.menu ul li a:hover{
+    color: #f00;
+}
+
+.buttom-left {
+    width: 20%;
+    float: right;
+    padding: 30px 0;
+}
+.buttom-left a.btd {
+    background: #f00;
+    padding-top: 13px;
+    padding-bottom: 15px;
+    padding-right: 35px;
+    padding-left: 35px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 20px;
+    transition: .3s;
+}
+.buttom-left a.btd:hover {
+    background: #fff;
+    border: 2px solid #f00;
+    color: #f00;
+}
+
+
+/* Dopdown menu */
+.primary-menu ul li {
+    position: relative;
+}
+.primary-menu ul li ul {
+    position: absolute;
+    background: #fff;
+    left: 0;
+    top: 100%;
+    width: 219px;
+    transform-origin: center;
+    opacity: 0;
+    visibility: hidden;
+    transform: scaleY(0);
+    transition: .3s;
+}
+.primary-menu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+
+
+/* banner-section */
+.banner-section {
+  background: url(img/baner.jpg) no-repeat center center;
+  background-size: contain;
+  padding: 400px 0;
+  color: #fff;
+  position: relative;
+}
+
+/* watch-video-section */
+.about-section {
+  padding-top: 0px;
+  padding-bottom: 100px;
+}
+.about-left {
+  width: 50%;
+  margin-right: 2%;
+  float: left;
+}
+.about-right {
+  width: 46%;
+  margin-left: 2%;
+  float: left;
+  padding-bottom: 100px;
+}
+.about-title h2 {
+  font-size: 47px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.about-title p {
+  color: #767676;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+
+
+/* Service section */
+.service-section {
+  padding-bottom: 100px;
+}
+  .service-title {
+    text-align: center;
+}
+  .service-title h2 {
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+  .service-title p {
+    font-size: 25px;
+    color: #767676;
+    font-weight: 400;
+  }
+  .service-item {
+    margin-top: 90px;
+  }
+  .service-box {
+    float: right;
+    width: 23%;
+    margin-right: 2%;
+    margin-bottom: 15px;
+    box-shadow: 3px 3px 10px rgb(0 0 0 / 20%);
+    padding: 20px;
+    box-sizing: border-box;
+}
+.service-icon {
+  width: 45px;
+  color: #6278df;
+  font-size: 42px;
+  float: left;
+  min-height: 115px;
+  margin-right: 10px;
+}
+  .service-content {
+    margin-top: 10px;
+  }
+  .service-content h3 {
+    font-size: 23px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  .service-content p {
+    color: #767676;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+
+
+
+/* look-section */
+.look-title {
+  text-align: center;
+  padding-top: 100px;
+}
+.look-section {
+  margin-top: 240px;
+  margin-bottom: 100px;
+}
+.look-title h2 {
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+.look-item-img {
+  width: 31%;
+  margin-right: 2%;
+  float: left;
+}
+.look-img a {
+  position: relative;
+  display: block;
+  width: fit-content;
+}
+.look-img a::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(172, 36, 43, 0.4);
+  
+  opacity: 0;
+  visibility: hidden;
+  transition: .5s;
+}
+.look-img:hover a::after{
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+
+/*footer*/
+.footer {
+  float: left;
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+  border-top: 1px solid #f00;
+  margin-top: 50px;
+}
+.footer p {
+  font-size: 20px;
+}
